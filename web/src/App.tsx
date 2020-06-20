@@ -10,5 +10,3 @@ function App() {
 }
 
 export default App;
-
-// Parei em 1h36 de vídeo 3
