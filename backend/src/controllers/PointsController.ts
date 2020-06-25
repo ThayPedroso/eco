@@ -16,7 +16,7 @@ class PointsController {
             .where('uf', String(uf))
             .distinct()
             .select('points.*')
-
+            
         return res.json(points)
     }
 
