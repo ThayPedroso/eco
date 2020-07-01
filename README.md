@@ -2,6 +2,8 @@
 
 A finalidade deste projeto foi conectar empresas e/ou entidades que coletam resíduos (orgânicos e inorgânicos) às pessoas e/ou entidades que necessitam constantemente descartar os resíduos por meio de uma aplicação web e mobile. 
 
+![](/backend/uploads/eco.png)
+
 ## Tecnologias
 
 ### Backend utilizando NodeJS/ExpressJS (Typescript)
