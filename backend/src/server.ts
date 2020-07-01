@@ -1,6 +1,7 @@
 import path from 'path'
 import express from 'express'
 import cors from 'cors'
+import { errors } from 'celebrate'
 
 const routes = require('./routes')
 
@@ -12,8 +13,7 @@ app.use(routes)
 
 app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')))
 
+app.use(errors())
+
 app.listen(3333)
 
-// npm i cors
-// @types/cors -D
-// Unsplash -> PointsController, colocar url
