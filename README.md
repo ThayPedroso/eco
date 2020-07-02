@@ -59,4 +59,6 @@ $ npm run start
 ### Executando o mobile no modo de desenvolvimento:
 $ npm run start
 
+![](/Ecoleta.gif)
+
 Projeto desenvolvido durante a next level week 01.
