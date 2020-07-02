@@ -3,7 +3,7 @@ import { Feather as Icon, FontAwesome } from '@expo/vector-icons'
 import { View, StyleSheet, TouchableOpacity, Image, Text, SafeAreaView, Linking } from 'react-native'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import Constants from 'expo-constants'
-import { RectButton, RawButton } from 'react-native-gesture-handler'
+import { RectButton } from 'react-native-gesture-handler'
 import * as MailComposer from 'expo-mail-composer';
 import api from '../../services/api'
 
@@ -34,7 +34,7 @@ const Detail = () => {
     const routeParams = route.params as Params
 
     useEffect(() => {
-      api.get(`points/${routeParams.point_id}`).then(response => {
+      api.get<Data>(`points/${routeParams.point_id}`).then(response => {
         setData(response.data)
       })
     }, [])
@@ -55,6 +55,7 @@ const Detail = () => {
     }
 
     if (!data.point) {
+      console.log('Não foi encontrado ponto')
       return null
     }
 
